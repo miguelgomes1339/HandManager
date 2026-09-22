@@ -1,0 +1,32 @@
+HANDMANAGER - CONFIGURAR LOGIN COM GOOGLE
+========================================
+
+A criação de conta normal funciona imediatamente.
+O botão "Continuar com Google" precisa de uma credencial OAuth do Google.
+
+1. Abre a Google Cloud Console.
+2. Cria/seleciona um projeto.
+3. Configura o ecrã de consentimento OAuth.
+4. Cria uma credencial "OAuth 2.0 Client ID" do tipo "Web application".
+5. Em "Authorized redirect URIs" adiciona exatamente:
+
+   http://localhost/HandManager/google_callback.php
+
+6. Copia o Client ID e Client Secret.
+7. Abre:
+
+   HandManager/config/config.php
+
+8. Preenche:
+
+   const GOOGLE_CLIENT_ID = 'O_TEU_CLIENT_ID';
+   const GOOGLE_CLIENT_SECRET = 'O_TEU_CLIENT_SECRET';
+
+9. Guarda e abre:
+
+   http://localhost/HandManager/login.php
+
+NOTA:
+- Uma conta criada pela primeira vez através do Google entra como tipo "Atleta".
+- O administrador pode depois alterar o tipo de utilizador no HandManager.
+- Nunca publiques o Client Secret num repositório público.

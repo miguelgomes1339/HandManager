@@ -1,0 +1,12 @@
+HANDMANAGER — VERSÃO FINAL TUDO NUM SÓ
+
+1) O único SQL do projeto é: database.sql
+2) Para instalação limpa, no phpMyAdmin cria/seleciona a base handmanager e importa database.sql.
+3) O SQL contém estrutura + dados + 344 atletas + equipas + jogos + estatísticas + treinos + utilizadores + perfis.
+4) Plantéis/posição/data de nascimento dos atletas Seniores A que foram encontrados em fontes atuais 2026/27 foram corrigidos.
+5) Se um campo individual (altura, peso, mão, etc.) não estava disponível numa fonte pública fiável, foi completado com um valor de demonstração e o perfil fica marcado como Misto/Simulado.
+6) Fotografias reais já existentes são preservadas; os restantes têm avatar local para nunca ficar sem imagem.
+7) O projeto mantém login Google/criar conta; o Client Secret continua a ser configuração local e não é incluído no ZIP.
+
+Perfis com informação pública atual aplicada/confirmada: 256
+Perfis totalmente de demonstração/baseline: 88

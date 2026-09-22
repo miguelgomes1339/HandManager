@@ -1,0 +1,39 @@
+HANDMANAGER — ATUALIZAÇÃO DOS DADOS DOS ATLETAS
+Data: 16/09/2026
+
+O que foi acrescentado:
+- Perfis completos para os 344 atletas: data de nascimento, nacionalidade, altura, peso, mão dominante, posição e número de camisola quando estes campos estavam vazios.
+- Identificação da origem do perfil: Misto ou Simulado.
+- Quando foi possível cruzar o atleta com informação pública de plantéis 2026/2027, essa parte foi usada como base.
+- Campos que não foi possível confirmar foram preenchidos com dados plausíveis de demonstração para a PAP.
+- NÃO foram inventados números CIPA oficiais. Quando não existe CIPA, a ficha apresenta um ID interno HM-xxxx.
+- Foram criados jogos, eventos estatísticos e treinos de demonstração para que eficácia, remates, golos, falhas técnicas, assistências, assiduidade e restantes indicadores apareçam preenchidos.
+- Os registos de demonstração estão identificados internamente com [PAP_DEMO_V2].
+
+IMPORTANTE:
+Os dados marcados como «Simulado» ou «Misto» não devem ser apresentados como dados oficiais do atleta.
+Servem para demonstração das funcionalidades do projeto escolar.
+
+SE JÁ TENS A BASE DE DADOS INSTALADA:
+1. Abre http://localhost/phpmyadmin/
+2. Seleciona a base de dados handmanager.
+3. Vai a Importar.
+4. Escolhe o ficheiro atualizar_dados_atletas.sql.
+5. Executa a importação.
+
+SE VAIS INSTALAR O PROJETO DO ZERO:
+- Importa apenas database.sql, porque já contém a atualização completa.
+
+Depois abre, por exemplo:
+http://localhost/HandManager/atletas.php
+
+Na ficha de cada atleta vais conseguir ver:
+- idade e data de nascimento;
+- CIPA ou ID interno;
+- altura, peso e mão dominante;
+- posição e número;
+- origem dos dados;
+- assiduidade;
+- golos, remates, eficácia, assistências, recuperações e falhas técnicas;
+- estatísticas por jogo;
+- formulário para editar as estatísticas.
